@@ -1,0 +1,9 @@
+---
+applications:
+- name: r-test-app
+  memory: 1G
+  instances: 1
+  buildpack: r_buildpack
+  command: R -f start.R
+  path: .
+  timeout: 180
